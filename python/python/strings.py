@@ -1,0 +1,6 @@
+a=input("Enter the name")
+print(a)
+print(a[2])
+print(a[2:4])
+print(a[2:])
+print(a * 5)

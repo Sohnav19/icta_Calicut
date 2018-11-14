@@ -1,0 +1,21 @@
+{%extends 'layout.html' %}
+
+{% block myContent %}
+
+
+<h1> ICT Students @ Calicut</h1>
+
+{% for students in myStudentslist %}
+<ul class="list-group">
+    <li class="list-group-item">{{students.id}}</li>
+    <li class="list-group-item">{{students.name}}</li>
+    <li class="list-group-item">{{students.place}}</li>
+    <li class="list-group-item">{{students.mobile}}</li>
+    <li class="list-group-item">{{students.email}}</li>
+    <li class="list-group-item">{{students.joinedDate}}</li>
+</ul>
+
+{% endfor %}
+
+
+{% endblock %}
