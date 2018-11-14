@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block myContent %}
+<h3 class="text-danger"> Contact Details</h3>
+<form method="POST" action="/send">
+    <div class="container">
+        
+        <div class="card">
+            <div class="row">
+                <div class="col-sm-6">
+                Name
+                </div>
+                <div class="col-sm-6">
+                <input name="name" class="form-control" type="text"  placeholder="Name">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                Register No
+                </div>
+                <div class="col-sm-6">
+                <input name="name" class="form-control" type="number"  placeholder="RegisterNo">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                Semester
+                </div>
+                <select id="Semester">
+                    <option value="sem1">Semester1</option>
+                    <option value="sem2">Semester2</option>
+                    <option value="sem3">Semester3</option>
+                    <option value="sem4">Semester4</option>
+                </select>
+                </div>
+            </div>
