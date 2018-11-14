@@ -1,0 +1,30 @@
+{%extends 'layout.html' %}
+
+{% block myContent %}
+
+
+<h3 class="bg-warning">EMPLOYEE DETAILS</h3>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">SALARY</th>
+        </tr>
+    </thead>
+
+
+{% for employee in myEmployeedetails %}
+<tr>
+    <td>{{employee.id}}</td>
+    <td>{{employee.name}}</td>
+    <td>{{employee.salary}}</td>
+</tr>    
+
+
+{% endfor %}
+</table>
+
+
+{% endblock %}

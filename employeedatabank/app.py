@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request
-
+from emplodata import Employee
 app=Flask(__name__)
 
 @app.route("/")
@@ -11,8 +11,10 @@ def home():
     return render_template('home.html')
 
 @app.route("/employee details")
-def Employee():
-    return render_template('employeedetails.html')
+def employee():
+    getEmployee=Employee()
+
+    return render_template('employeedata.html',myEmployeedetails=getEmployee)
 
     
 
